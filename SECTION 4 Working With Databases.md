@@ -34,15 +34,17 @@ php artisan migrate
 
 - 위 명령 입력 후 아래와 같이 확인해 볼 수  있음.
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01.png)
+
+![image](https://user-images.githubusercontent.com/30388465/190651909-60cba591-7852-4bcd-894b-8cc0ecf7d834.png)
+
 
 - 또는, 영상에 나오는 아래와 같은 데이터베이스 접속 및 관리 프로그램 등을 설치하여 확인해 볼 수 있음.
 
 [https://tableplus.com/](https://tableplus.com/)
 
-![image02.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image02.png)
+![image](https://user-images.githubusercontent.com/30388465/190652576-a728e00a-a420-4d5d-acc8-3dc80a44651c.png)
 
-![image03.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image03.png)
+![image](https://user-images.githubusercontent.com/30388465/190652861-2706cbe8-03fb-4944-8c16-7e4068161234.png)
 
 # 18. Migrations: The Absolute Basics
 
