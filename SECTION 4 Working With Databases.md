@@ -52,7 +52,7 @@ php artisan migrate
 
 - database-migrations 폴더에 정의되어 있음.
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01%201.png)
+![img](https://user-images.githubusercontent.com/30388465/190653916-8ede56e6-1408-4e13-aad1-334fbe61b4b7.png)
 
 나. 데이터베이스 이전으로 되돌리기(rollback)
 
@@ -62,7 +62,8 @@ php artisan migrate
 php artisan migrate:rollback
 ```
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01%202.png)
+![image](https://user-images.githubusercontent.com/30388465/190654753-704162e5-5c0a-4856-9f24-4243f98099b8.png)
+
 
 다. 데이터베이스 처음으로 초기화
 
@@ -77,7 +78,7 @@ php artisan migrate:fresh
 
   1) database-migrations 밑에 있는 파일 수정
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01%203.png)
+![image](https://user-images.githubusercontent.com/30388465/190655024-f6b2e7aa-5fc6-4ba2-a0ed-51cbeb9f732b.png)
 
   2) 롤백 후 생성
 
@@ -94,7 +95,7 @@ php artisan migrate:fresh
 
 가. Eloquent
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01%204.png)
+![image](https://user-images.githubusercontent.com/30388465/190655328-5907bc43-1b4e-4b88-821e-33b6b9947b51.png)
 
 (참조) [https://pronist.dev/142](https://pronist.dev/142)
 
@@ -147,7 +148,7 @@ php artisan tinker
 
   2) 이후 아래 그림처럼 예시 데이터 입력
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01%205.png)
+![image](https://user-images.githubusercontent.com/30388465/190655486-244bc733-1830-4710-b64d-6cefdd96af7c.png)
 
 - 비밀번호는 bcrypt 문 사용하여 암호화 시켜줌.
 - 마지막, $user->save(); 를 해주어야 DB에 저장됨.
@@ -155,7 +156,7 @@ php artisan tinker
 
   3) DB 수정 및 확인
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01%206.png)
+![image](https://user-images.githubusercontent.com/30388465/190655583-300a1510-6f90-4389-9e6d-45151d13f574.png)
 
   4) DB 검색 및 조회
 
@@ -197,7 +198,7 @@ php artisan make:migration create_posts_table
 
 - string는 최대 255자, 그보다 많은 내용을 저장할 경우 text 사용
 
-![image01.png](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/image01%207.png)
+![image](https://user-images.githubusercontent.com/30388465/190655727-f0d7d9b1-eb13-4b91-ad9f-2a4a5b854b14.png)
 
 - 테이블 이름은 복수형, 그와 연관된 모델 이름은 단수형으로 붙이는 것이 일반적임.
 
@@ -232,11 +233,11 @@ $ php artisan tinker
 
 마. 이제 web.php 파일의 아랫 부분에서 $slug를 $id로 수정해줌.
 
-![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled.png)
+![image](https://user-images.githubusercontent.com/30388465/190655864-92992f97-696a-438b-8517-6701dbdbe21d.png)
 
 바. posts.blade.php 수정
 
-![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/30388465/190656362-11736938-ddc5-4f84-936e-7c6c2d1446c7.png)
 
 # 21. ****Eloquent Updates and HTML Escaping****
 
@@ -604,8 +605,8 @@ $ php artisan tinker
     - 3 Copy as
     - 4 insert satement 클릭
     - 5 새로고침 (자료 사라짐)
-    
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%202.png)
+
+![image](https://user-images.githubusercontent.com/30388465/190658194-0af767b0-4b7e-4eea-a278-7d6860a84328.png)
     
 5. TablePlus) 
     - 1 sql 클릭
@@ -613,8 +614,8 @@ $ php artisan tinker
     - 3 각 자료에 slug에 해당하는 거 추가(빈칸없이 -로 연결)   ‘my-first-post’,   (따옴표)
     - 콤마, 따옴표 제대로 입력후 4번 클릭
     - 5번 제대로 적용되었는지 확인
-    
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%203.png)
+
+![image](https://user-images.githubusercontent.com/30388465/190658328-64f57799-2a23-49d2-b16c-b8de44a1ceff.png)
     
 6. TablePlus) posts table에서 새로고침 후 확인
 
@@ -775,8 +776,8 @@ $ php artisan tinker
     ```
     
 3. categories table 에 자료 추가 (방법2 - tableplus 활용)
-    
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%204.png)
+
+![image](https://user-images.githubusercontent.com/30388465/190658541-1aa70e24-c418-489a-95ec-4a29927d16a9.png)
     
 4. post table에 자료 추가하기 **(카테고리 id 1, 2, 3으로 각 1개씩 총 3개 만들기)**
     
@@ -794,8 +795,9 @@ $ php artisan tinker
     ```
     
 5. tableplus)  category_id가 1인 posts 들을 찾는 방법
-    
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%205.png)
+
+![image](https://user-images.githubusercontent.com/30388465/190658662-edd9387f-0bb3-4e2c-b713-94941388d3a2.png)
+
     
 6. tinker에서 찾는 방법 
     
@@ -1011,7 +1013,7 @@ $ composer require itsgoingd/clockwork
 
 Clockwork를 설치하면 아래와 같이 query와 관련된 정보를 확인할 수 있습니다
 
-![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%206.png)
+![image](https://user-images.githubusercontent.com/30388465/190658849-ebfdd701-3e48-4bb3-abab-4e07c56c4392.png)
 
 ## N+1 Query 문제 해결하기
 
@@ -1033,8 +1035,8 @@ return view('posts', [
 ```
 
  수정 후의 clockwork 화면
-
-![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%207.png)
+ 
+ ![image](https://user-images.githubusercontent.com/30388465/190658946-d3f474f3-3599-4947-994d-e22d21cd3f9f.png)
 
 # **27.  Database Seeding Saves Time**
 
@@ -1242,12 +1244,12 @@ User::factory()->create([
 - Post 추가하기
     - php artisan tinker (sail tinker) 실행
     
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%208.png)
-    
+    ![image](https://user-images.githubusercontent.com/30388465/190659105-09f5af7c-970d-415e-b071-afeadfe0095b.png)
+   
     - 혹시 아래 처럼 나오더라도 쫄지 말고 한번 더 하면 잘 됨 (랜덤으로 생성되지만 중복 생성되는 경우가 있음)
     
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%209.png)
-    
+    ![image](https://user-images.githubusercontent.com/30388465/190659176-9c101307-3032-45c2-ab47-3209213da496.png)
+
 - 정렬
     - 가장 최근에 작성한 글이 먼저 `Post::*latest*()->with('category')->get()`
     - 참고로 요건 반대 결과 `Post::*oldest*()->with('category')->get()`
@@ -1265,21 +1267,22 @@ User::factory()->create([
     
     - 매서드를 사용한 Blade 파일 수정 `{{ $post->author->name }}`
     - posts.blade.php 도 post.blade.php 처럼 작성자 이름이 나오도록 수정
-        
-        ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%2010.png)
+    
+    ![image](https://user-images.githubusercontent.com/30388465/190659350-6d4e4df0-ba26-4104-b0bd-c9f409dff573.png)
         
 - N + 1 쿼리 문제 해결
     - 엘로퀀트 연관관계들을 속성으로 접근할 때 연관관계 데이터는 "지연 로드" 됩니다. 이는 실제로 속성에 엑세스 하기 전까지 연관관계 데이터가 로드되지 않는다는 것을 의미합니다. 하지만 엘로퀀트는 상위 모델을 조회할 때 연관관계를 맺고 있는 하위 모델을 "eager 로드-즉시로드"할 수있도록 기능을 제공합니다. Eager 로딩은 N + 1 쿼리 문제를 해결 합니다. <출처: 라라벨코리아>
     - 제프리처럼 N +1 쿼리를 확인해 봅니다.
-    
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%2011.png)
+
+![image](https://user-images.githubusercontent.com/30388465/190659461-2c7e7f50-4fd6-454a-86ce-397090ba03b6.png)
     
     - `author` 이거로딩 추가, 아래 두가지 모두 같은 결과를 보여줍니다.
         - `Post::*oldest*()->with('category', 'author')->get()`
         - `Post::*oldest*()->with(['category', 'author'])->get()`
         - N + 1 쿼리가 해결되었습니다.
-        
-        ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%2012.png)
+
+![image](https://user-images.githubusercontent.com/30388465/190659526-217df329-5d77-48b7-ba33-a16d5bda5d95.png)
+
         
 - 특정 작가가 작성한 글 모아보기
     - 라우트 추가
@@ -1304,9 +1307,8 @@ User::factory()->create([
     - 블레이드 수정
         - `<a href="/authors/{{ $post->author->username }}"> {{ $post->author->name }}</a>`
 - TablePlus 에서 username 변경후 변경한 이름으로 접속해서 확인
-    
-    ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%2013.png)
-    
+- 
+![image](https://user-images.githubusercontent.com/30388465/190659618-de749c0c-3c6a-4883-a0a3-34b46e409e24.png)
 
 # 30. ****Eager Load Relationships on an Existing Model****
 
@@ -1333,9 +1335,9 @@ User::factory()->create([
         - (결과물로 가져와진 자료인) 컬랙션은 load()로 이거로딩
     - [https://laravel.kr/docs/9.x/eloquent-collections#introduction](https://laravel.kr/docs/9.x/eloquent-collections#introduction)
         - 사용가능한 메소드들 중에  load 내용 확인
-            
-            ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%2014.png)
-            
+
+![image](https://user-images.githubusercontent.com/30388465/190659800-5f43f5ec-46c6-423f-b167-02406692a4b7.png)
+
 - ****모델을 로딩할 때 연관관계모델을 항상 Eager 로딩 하기****
     - web.php 라우트 파일에 반복해서 이거로딩하는 릴레이션을 Post 모델에 설정해서 반복되는 코드를 줄입니다.
     - Post 모델에 추가
@@ -1374,9 +1376,8 @@ User::factory()->create([
     - 이럴 경우에는 모델에 이거로딩이 설정되어 있어도 사용할때 이거로딩을 해제할 수 있습니다.
     - tinker 에서 확인
         - 모델에 기본 적용 되었을 때 App\Models\Post::first() 하면 Post 모델만 호출했지만 아래처럼 category 와 author 도 함께 가져온다.
-        
-        ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%2015.png)
-        
+![image](https://user-images.githubusercontent.com/30388465/190659946-4ffa4130-4903-4ffc-bb1a-892f0ea13a78.png)
+
         - without() 으로 해제가 가능하다.
-        
-        ![Untitled](SECTION%204%20Working%20With%20Databases%204acb4c6bdd2847589cbff53c499ccfd5/Untitled%2016.png)
+	
+	![image](https://user-images.githubusercontent.com/30388465/190660027-1f2c2d68-acb9-4068-a045-0e704157a183.png)
